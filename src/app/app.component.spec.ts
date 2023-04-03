@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'remote-app'`, () => {
+  it(`should have as title 'remote-angular-app-wp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('remote-app');
+    expect(app.title).toEqual('remote-angular-app-wp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('remote-app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('remote-angular-app-wp app is running!');
   });
 });
